@@ -23,7 +23,7 @@ makeCacheMatrix <- function( z = matrix() ) {
 
     ## Get the inverse of the matrix
     getInverse <- function() {
-        ## Return the inverse property
+        ## Return 
         iz
     }
 
