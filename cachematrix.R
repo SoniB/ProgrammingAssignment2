@@ -1,5 +1,4 @@
 
-
 ## Creates a  matrix  that can cache its inverse
 makeCacheMatrix <- function( z = matrix() ) {
  
@@ -39,7 +38,7 @@ makeCacheMatrix <- function( z = matrix() ) {
 # makeCacheMatrix
 cacheSolve <- function(x, ...) {
 
-    
+    ##Get Inverse
     z <- x$getInverse()
 
     ##Return the inverse if its already set
@@ -49,10 +48,11 @@ cacheSolve <- function(x, ...) {
     }
 
     data <- x$get()
-
+    ##Finding Inverse
     z <- solve(data) %*% data
 
     x$setInverse(z)
+
     ##Return
     z
 }
