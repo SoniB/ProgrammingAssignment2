@@ -1,4 +1,5 @@
 
+
 ## Creates a  matrix  that can cache its inverse
 makeCacheMatrix <- function( z = matrix() ) {
  
@@ -52,7 +53,6 @@ cacheSolve <- function(x, ...) {
     z <- solve(data) %*% data
 
     x$setInverse(z)
-
     ##Return
     z
 }
